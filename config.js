@@ -7,7 +7,7 @@ window.KORADE_CONFIG = {
     description: "Discover the official KORADE Roblox experience. Explore the game, collect animals, and join the adventure.",
     url: "https://www.roblox.com/es/games/137764992604751/Smash-Eggs-For-Animals",
     placeId: "137764992604751",
-    image: "",               // Loaded automatically from Roblox thumbnails
+    image: "https://files.clearlydev.com/v2-assets/products/205534664/thumbnails/thumbnail-1793730660893-436.png",               // Loaded automatically from Roblox thumbnails
     screenshots: [
       // "https://your-image-host.com/screenshot-1.jpg",
       // "https://your-image-host.com/screenshot-2.jpg",
