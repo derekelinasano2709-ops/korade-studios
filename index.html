@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080807">
+  <meta name="description" content="KORADE STUDIOS — Play. Create. Belong. Independent Roblox game studio.">
+  <title>KORADE STUDIOS — Play. Create. Belong.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/korade-crown.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="translations.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><img src="assets/korade-crown.png" alt=""><span>KORADE STUDIOS</span><i></i></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="KORADE STUDIOS home">
+      <img src="assets/korade-crown.png" alt="" class="brand-crown">
+      <span class="brand-name">KORADE <small>STUDIOS</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#games" data-i18n="navGames">GAMES</a>
+      <a href="#about" data-i18n="navAbout">ABOUT</a>
+      <a href="#founders" data-i18n="navFounders">FOUNDERS</a>
+      <a href="#rules" data-i18n="navRules">RULES</a>
+      <a class="nav-join" href="#community" data-i18n="navCommunity">COMMUNITY <b>↗</b></a>
+    </nav>
+    <div class="header-tools">
+      <select id="languageSelect" aria-label="Select language"><option value="en">EN</option><option value="es">ES</option><option value="pt">PT</option><option value="fr">FR</option><option value="de">DE</option></select>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><span id="themeGlyph">☼</span></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><i></i><span data-i18n="heroEyebrow">INDEPENDENT ROBLOX STUDIO</span><b>— 001</b></p>
+        <h1 class="hero-title reveal">WE MAKE<br><span>WORLDS</span><sup>®</sup></h1>
+        <div class="hero-bottom reveal">
+          <div><p class="hero-tagline" data-i18n="heroTagline">Ideas today. Bigger tomorrow.</p><p class="hero-description" data-i18n="heroDescription">We build experiences designed to bring people together. Every world starts with an idea — and every idea has room to grow.</p></div>
+          <a class="round-link magnetic" href="#games" aria-label="Explore games"><span>↓</span></a>
+        </div>
+        <div class="hero-cta reveal"><a class="button button-gold magnetic" href="#games"><span data-i18n="exploreGames">EXPLORE GAMES</span><b>↗</b></a><span class="micro-note" data-i18n="heroNote">BUILT WITH PURPOSE. MADE TO BE PLAYED.</span></div>
+      </div>
+      <div class="hero-stage" id="heroStage">
+        <div class="stage-grid"></div><div class="stage-ring ring-a"></div><div class="stage-ring ring-b"></div>
+        <div class="stage-light"></div>
+        <div class="hero-crown-wrap"><img src="assets/korade-crown.png" class="hero-crown" alt="KORADE crown logo"></div>
+        <div class="stage-wordmark">K<span>•</span></div>
+        <div class="stage-index"><span>FIG. 001</span><span>THE KORADE MARK</span></div>
+        <div class="stage-vertical">GAMES · PEOPLE · POSSIBILITIES</div>
+        <div class="stage-coordinates">25° N / 77° W</div>
+      </div>
+      <div class="hero-edge"><span>SCROLL TO EXPLORE <b>↓</b></span><span>EST. 2026</span></div>
+    </section>
+
+    <div class="ticker"><div class="ticker-track"><span>PLAY WITH PURPOSE ✳ CREATE WITHOUT LIMITS ✳ BUILD WHAT'S NEXT ✳ </span><span>PLAY WITH PURPOSE ✳ CREATE WITHOUT LIMITS ✳ BUILD WHAT'S NEXT ✳ </span></div></div>
+
+    <section class="games-section section-shell section-pad" id="games">
+      <div class="section-top reveal"><div><p class="eyebrow"><i></i><span data-i18n="gamesEyebrow">THE PLAYGROUND</span><b>— 002</b></p><h2 data-i18n="gamesTitle">MADE TO BE<br><em>PLAYED.</em></h2></div><p class="section-intro" data-i18n="gamesIntro">New worlds. New stories. Find the experience that stays with you.</p></div>
+      <article class="feature-game tilt-card reveal" id="featureGame">
+        <div class="game-image-wrap">
+          <img id="gameImage" class="game-image" src="" alt="KORADE featured Roblox game" loading="lazy">
+          <div class="game-image-fallback" id="gameFallback"><div class="fallback-orb">K<span>+</span></div><span data-i18n="imageComing">GAME ARTWORK COMING SOON</span></div>
+          <div class="image-shade"></div><span class="game-tag" data-i18n="featuredTag">KORADE ORIGINAL / 001</span>
+          <span class="image-corner">↗</span>
+        </div>
+        <div class="game-details"><div class="game-meta"><span class="live-dot"></span><span data-i18n="gameStatus">IN DEVELOPMENT</span><span class="meta-line"></span><span>ROBLOX</span></div><h3 id="gameName">The next KORADE experience</h3><p id="gameDescription" data-i18n="gamePlaceholder">An original experience is taking shape. The next world is closer than you think.</p><a id="gameLink" class="button button-outline" href="#" target="_blank" rel="noopener"><span data-i18n="playOnRoblox">DISCOVER ON ROBLOX</span><b>↗</b></a></div>
+      </article>
+      <div class="game-gallery" id="gameGallery" aria-label="Game screenshots"></div>
+      <p class="section-footnote" data-i18n="gameNote">Official game artwork and screenshots will appear here as they are released.</p>
+    </section>
+
+    <section class="manifesto" id="about"><div class="section-shell manifesto-grid">
+      <div class="manifesto-side reveal"><p class="eyebrow"><i></i><span data-i18n="aboutEyebrow">THE STUDIO</span><b>— 003</b></p><span class="big-index">K.</span><span class="side-caption" data-i18n="sideCaption">A DIFFERENT KIND<br>OF PLAY.</span></div>
+      <div class="manifesto-main reveal"><h2 data-i18n="aboutTitle">NOT JUST<br>A GAME.<br><em>A FEELING.</em></h2><p class="manifesto-lead" data-i18n="aboutLead">KORADE STUDIOS is an independent Roblox studio driven by imagination, craft, and the belief that the best experiences bring people together.</p><p class="manifesto-copy" data-i18n="aboutBody">We turn ambitious ideas into playable worlds. We value detail, collaboration, and the little moments that make a game unforgettable. This is only the beginning.</p><div class="values-row"><div><strong>01</strong><span data-i18n="valueOne">IMAGINATION</span></div><div><strong>02</strong><span data-i18n="valueTwo">CRAFT</span></div><div><strong>03</strong><span data-i18n="valueThree">COMMUNITY</span></div></div></div>
+    </div></section>
+
+    <section class="founders-section section-shell section-pad" id="founders">
+      <div class="section-top reveal"><div><p class="eyebrow"><i></i><span data-i18n="foundersEyebrow">THE PEOPLE BEHIND THE MARK</span><b>— 004</b></p><h2 data-i18n="foundersTitle">TWO MINDS.<br><em>ONE VISION.</em></h2></div><p class="section-intro" data-i18n="foundersIntro">Meet the founders building the next chapter of KORADE.</p></div>
+      <div class="founder-grid">
+        <article class="founder-card tilt-card reveal"><div class="founder-top"><span>01 / CO-FOUNDER</span><span class="founder-cross">✳</span></div><div class="founder-monogram">A<span>.</span></div><div class="founder-bottom"><div><h3>Amil_Forsales</h3><p>DISCORD · FOLYTR</p></div><span class="founder-arrow">↗</span></div><p class="founder-bio" data-i18n="founderOneBio">Co-founder — shaping the studio's direction and creative ambition.</p></article>
+        <article class="founder-card tilt-card reveal"><div class="founder-top"><span>02 / CO-FOUNDER</span><span class="founder-cross">✳</span></div><div class="founder-monogram">C<span>.</span></div><div class="founder-bottom"><div><h3>cogjim</h3><p>ROBLOX · @UTOPIANCOW3015</p></div><span class="founder-arrow">↗</span></div><p class="founder-bio" data-i18n="founderTwoBio">Co-founder — building the foundations for what comes next.</p></article>
+      </div>
+    </section>
+
+    <section class="rules-section" id="rules"><div class="section-shell rules-grid">
+      <div class="rules-intro reveal"><p class="eyebrow"><i></i><span data-i18n="rulesEyebrow">THE KORADE CODE</span><b>— 005</b></p><h2 data-i18n="rulesTitle">RESPECT IS<br><em>THE RULE.</em></h2><p data-i18n="rulesIntro">A great community is built by everyone in it. Keep these principles in mind wherever you represent KORADE.</p><div class="age-card"><div class="age-stamp">16<span>+</span></div><div><strong data-i18n="ageTitle">A 16+ COMMUNITY</strong><p data-i18n="ageText">KORADE community spaces are intended for people aged 16 and over. Please respect this requirement.</p></div></div></div>
+      <div class="rules-list reveal">
+        <div class="rule-row"><span>01</span><div><h3 data-i18n="ruleOneTitle">RESPECT PEOPLE</h3><p data-i18n="ruleOneText">Treat members, creators, and staff with respect. Harassment and discrimination are not tolerated.</p></div><b>↗</b></div>
+        <div class="rule-row"><span>02</span><div><h3 data-i18n="ruleTwoTitle">PROTECT PRIVACY</h3><p data-i18n="ruleTwoText">Never share private information. Be careful with suspicious links and files.</p></div><b>↗</b></div>
+        <div class="rule-row"><span>03</span><div><h3 data-i18n="ruleThreeTitle">NO SPAM</h3><p data-i18n="ruleThreeText">No spam, raids, unsolicited advertising, or disruptive behavior.</p></div><b>↗</b></div>
+        <div class="rule-row"><span>04</span><div><h3 data-i18n="ruleFourTitle">FOLLOW THE PLATFORMS</h3><p data-i18n="ruleFourText">Follow Roblox, Discord, and applicable community guidelines.</p></div><b>↗</b></div>
+        <div class="rule-row"><span>05</span><div><h3 data-i18n="ruleFiveTitle">RESPECT MODERATION</h3><p data-i18n="ruleFiveText">Listen to moderators and use the right channels for questions or appeals.</p></div><b>↗</b></div>
+      </div>
+    </div></section>
+
+    <section class="community-section section-shell" id="community"><div class="community-panel reveal">
+      <div class="community-backdrop">KORADE</div><div class="community-content"><p class="eyebrow"><i></i><span data-i18n="communityEyebrow">YOUR NEXT STOP</span><b>— 006</b></p><h2 data-i18n="communityTitle">THE WORLD<br>IS BETTER <em>TOGETHER.</em></h2><p data-i18n="communityText">Join the official community. Get studio news, game announcements, and a first look at what we're creating.</p><a id="discordLink" class="button button-gold magnetic" href="#" target="_blank" rel="noopener"><span data-i18n="joinDiscord">ENTER THE COMMUNITY</span><b>↗</b></a><span class="community-note" id="discordNote" data-i18n="discordPlaceholder">Official Discord invitation coming soon.</span></div>
+      <div class="community-emblem"><img src="assets/korade-crown.png" alt=""></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand" href="#top"><img src="assets/korade-crown.png" alt="" class="brand-crown"><span class="brand-name">KORADE <small>STUDIOS</small></span></a><p data-i18n="footerLine">GAMES. PEOPLE. POSSIBILITIES.</p><span>© <span id="year"></span> KORADE STUDIOS</span><a href="#top" class="back-top" data-i18n="backTop">BACK TO TOP ↑</a></footer>
+
+  <div class="age-modal" id="ageModal" role="dialog" aria-modal="true" aria-labelledby="ageModalTitle" hidden><div class="age-modal-card"><img src="assets/korade-crown.png" alt="" class="modal-crown"><p class="eyebrow">KORADE STUDIOS</p><h2 id="ageModalTitle" data-i18n="modalTitle">A 16+ COMMUNITY</h2><p data-i18n="modalText">Our community spaces are intended for people aged 16 and over. Please confirm that you meet this age requirement before continuing.</p><div class="modal-actions"><button class="button button-gold" id="ageConfirm" data-i18n="ageConfirm">I'M 16 OR OLDER</button><button class="text-button" id="ageDecline" data-i18n="ageDecline">I'M UNDER 16</button></div><small data-i18n="ageDisclaimer">This is a self-declaration, not formal age verification.</small></div></div>
+</body>
+</html>
