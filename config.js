@@ -9,9 +9,9 @@ window.KORADE_CONFIG = {
     placeId: "137764992604751",
     image: "https://files.clearlydev.com/v2-assets/products/205534664/thumbnails/thumbnail-1793730660893-436.png",               // Loaded automatically from Roblox thumbnails
     screenshots: [
-      // "https://your-image-host.com/screenshot-1.jpg",
-      // "https://your-image-host.com/screenshot-2.jpg",
-      // "https://your-image-host.com/screenshot-3.jpg"
+      // "https://i.ytimg.com/vi/SC4DPK9tIxg/hqdefault.jpg",
+      // "https://files.clearlydev.com/v2-assets/products/205534664/thumbnails/thumbnail-1793730660893-436.png",
+      // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2lwJ6FQaxI4OaBj-jPPYKf7481nvkJVIZEiPA4G5rJQ&s=10"
     ]
   },
   discord: {
