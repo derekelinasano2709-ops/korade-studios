@@ -66,13 +66,21 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;op
 .age-modal {
   position: fixed !important;
   inset: 0 !important;
-  z-index: 2000 !important;
-  display: grid !important;
-  place-items: center !important;
-  isolation: isolate;
-  background: rgba(0, 0, 0, 0.88);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  z-index: 99999 !important;
+
+  display: grid;
+  place-items: center;
+
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .age-modal[hidden] {
@@ -81,18 +89,14 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;op
 
 .age-modal-card {
   position: relative !important;
-  z-index: 2001 !important;
-  display: block !important;
+  margin: auto !important;
+  width: min(100%, 460px) !important;
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+
   visibility: visible !important;
   opacity: 1 !important;
   transform: none !important;
-  width: min(100%, 460px);
-  background: #11110f !important;
-  color: #f2efe7 !important;
-} 
-/* KORADE — REMOVE EXCESSIVE BACKGROUND BLUR */
-.age-modal {
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-  background: rgba(0, 0, 0, 0.65) !important;
+  z-index: 100000 !important;
 }
+
