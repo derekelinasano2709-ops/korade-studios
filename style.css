@@ -90,3 +90,9 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;op
   background: #11110f !important;
   color: #f2efe7 !important;
 } 
+/* KORADE — REMOVE EXCESSIVE BACKGROUND BLUR */
+.age-modal {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background: rgba(0, 0, 0, 0.65) !important;
+}
