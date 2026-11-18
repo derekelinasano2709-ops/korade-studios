@@ -62,3 +62,31 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;op
 @media(max-width:800px){.hero-orbit-label{font-size:7px;padding:7px 8px}.orbit-label-a{left:-3%}.orbit-label-b{right:-3%}.hero-actions{align-items:stretch}.hero-actions .btn{flex:1 1 180px}.cursor-ring{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 [data-theme="light"] .hero-orbit-label{color:#8b6528;background:rgba(255,255,255,.76)}
+/* KORADE — FIX AGE MODAL VISIBILITY */
+.age-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2000 !important;
+  display: grid !important;
+  place-items: center !important;
+  isolation: isolate;
+  background: rgba(0, 0, 0, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.age-modal[hidden] {
+  display: none !important;
+}
+
+.age-modal-card {
+  position: relative !important;
+  z-index: 2001 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  width: min(100%, 460px);
+  background: #11110f !important;
+  color: #f2efe7 !important;
+} 
